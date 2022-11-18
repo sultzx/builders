@@ -2,5 +2,5 @@
     "port": 6000,
     "mongodbUrl": "mongodb+srv://sult:61bsJTP82NkDGkQn@cluster0.ja1ehfb.mongodb.net/mern_app?retryWrites=true&w=majority",
     "jwt_secret_key": "qwerty",
-    "baseUrl": "http://localhost:6000"
+    "baseUrl": "http://localhost"
 }
