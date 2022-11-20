@@ -81,10 +81,10 @@ export const MainPage = () => {
                                         img: ''
                                     }
 
-                                ].map(service => (
-                                    <Col style={{marginBottom: '20px'}}>
-                                        <Card style={{ width: '18rem' }}>
-                                            <Card.Header as="h5">{service.title}</Card.Header>
+                                ].map((service, i) => (
+                                    <Col key={service.title + service.content + i} style={{marginBottom: '20px'}}>
+                                        <Card  style={{ width: '18rem' }}>
+                                            <Card.Header  as="h5">{service.title}</Card.Header>
                                             <Card.Body>
                                                 <Card.Text>
                                                     {service.content}

@@ -54,14 +54,14 @@ export const CarsPage = () => {
                                     },
                                     
 
-                                ].map(service => (
-                                    <Col style={{marginBottom: '20px'}}>
+                                ].map((car, i) => (
+                                    <Col key={car.brand + car.img + i}  style={{marginBottom: '20px'}}>
                                         <Card style={{ width: '10rem' }}>
-                                            <Card.Header as="h5">{service.brand}</Card.Header>
-                                            <img src={service.img} alt="asd"/>
+                                            <Card.Header as="h5">{car.brand}</Card.Header>
+                                            <img src={car.img} alt="asd"/>
                                             <Card.Body>
                                                 <Card.Text>
-                                                    {service.model}
+                                                    {car.model}
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>

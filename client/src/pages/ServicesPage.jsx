@@ -21,9 +21,6 @@ export const ServicesPage = () => {
                     </Alert> : 
                 <Container>
                 <Row>
-                    {/* <Col md={12} xl={12} sm={12} lg={12} style={{ textAlign: 'center' }}>
-                        <h5 > Көрсетілетін қызметтер</h5>
-                    </Col> */}
                     <Col md={12} xl={12} sm={12} lg={12}>
                         <Row>
                             {
@@ -69,8 +66,8 @@ export const ServicesPage = () => {
                                         img: 'https://tehservice.kz/storage/app/uploads/public/d3c/ce7/b4e/thumb__260_183_0_0_auto.jpg'
                                     },
 
-                                ].map(service => (
-                                    <Col style={{marginBottom: '20px'}}>
+                                ].map((service, i) => (
+                                    <Col key={service.title + service.content + i} style={{marginBottom: '20px'}}>
                                         <Card style={{ width: '18rem' }}>
                                             <Card.Header as="h5">{service.title}</Card.Header>
                                             <img src={service.img} alt="asd" />
@@ -78,7 +75,7 @@ export const ServicesPage = () => {
                                                 <Card.Text>
                                                     {service.content}
                                                 </Card.Text>
-                                            </Card.Body>
+                                            </Card.Body>    
                                         </Card>
                                     </Col>
                                 ))

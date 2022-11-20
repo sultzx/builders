@@ -1,7 +1,7 @@
 {
-  "name": "mern-project",
+  "name": "cars",
   "version": "1.0.0",
-  "description": "mern stack",
+  "description": "cars project",
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app.js",
